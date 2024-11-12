@@ -1,0 +1,24 @@
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.*;
+import java.awt.*;
+public class Registered extends JFrame {
+    JPanel registered_panel;
+    Registered()
+    {
+        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        setSize(1200, 800);
+        registered_panel = new JPanel();
+        setLayout(null);
+        JLabel username = new JLabel("Username");
+        username.setFont(new Font("Arial", Font.PLAIN, 30));
+        username.setBounds(100, 100, 100, 30);
+        registered_panel.add(username);
+
+        add(registered_panel);
+        setVisible(true);
+    }
+    public static void main(String[] args) {
+        new Registered();
+    }
+}
